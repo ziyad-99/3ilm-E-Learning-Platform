@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logoicon.png" />
+    <link href="../css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="../css/datatable.css" type="text/css" rel="stylesheet">
+    <title>Souf Academy</title>
+</head>
+
+<body class="bg-[#f5f5f5]">
+    <div class="bg-[#f5f5f5]">
+        <header class="relative z-10">
+            <div class=" lg:px-16 items-center justify-between pt-4">
+                
+                <!--  mobile virsion after login remove  hidden  -->
+                <div class="w-11/12 flex md:hidden items-center gap-2 justify-end">
+                    <a href="#" class=" md:hidden">
+                        <img class=" h-[60px] md:h-[85px] object-contain" src="../images/logo.png" />
+                    </a>
+                    <div class="ms-auto block lg:hidden ">
+                        <div class=" relative top-auto  md:end-auto cursor-pointer"
+                            onclick="dropdownfun(this)">
+                            <div
+                                class=" w-5 h-5 bg-orange rounded-full flex items-center justify-center absolute -top-1 md:start-auto start-6 md:-end-1 z-10">
+                                <p class=" text-white text-center   font-bold text-[11px] ">
+                                    1</p>
+                            </div>
+                            <img class="h-auto  rounded-full w-10 object-contain relative"
+                                src="../images/notification.png" />
+                        </div>
+                        <div class="absolute w-screen shadow-xl z-100 start-0 top-20 p-5 md:w-auto  bg-white select1  end-0 overflow-hidden rounded-2xl">
+                        <div
+                            class=" w-full max-h-96 min-h-96 overflow-y-auto  md:pe-5 overflow-x-hidden md:w-72 top-12 md:bg-white md:shadow rounded-2xl py-4 md:p-3">
+    
+                            <div
+                                class=" flex mb-2 items-start group px-2 hover:bg-orange/20 border-b border-orange/10 rounded-2xl group">
+                                <img data-aos="fade-left" class="h-auto mt-4 rounded-full w-10 object-contain relative"
+                                    src="../images/notifcations/new_article.png" />
+                                <div class="py-4 px-4">
+                                    <p class=" text-black34  cursor-pointer      font-bold text-sm ">
+                                        Ahmed moussa</p>
+                                    <span class=" text-gray  font-medium text-xs fontp">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</span>
+    
+                                    <p class=" text-gray  font-medium text-xs fontp">06-07-2023</p>
+                                </div>
+    
+                            </div>
+                            <div
+                                class=" flex mb-2 relative items-start group px-2 bg-orange/10 hover:bg-orange/20 border-b border-orange/10 rounded-2xl group">
+                                <img data-aos="fade-left" class="h-auto mt-4 rounded-full w-10 object-contain relative"
+                                    src="../images/notifcations/complete.png" />
+                                <div class="py-4 px-4">
+                                    <p class=" text-black34  cursor-pointer      font-bold text-sm ">
+                                        Ahmed moussa</p>
+                                    <span class=" text-gray  font-medium text-xs fontp">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</span>
+    
+                                    <p class=" text-gray  font-medium text-xs fontp">06-07-2023</p>
+                                </div>
+    
+    
+                            </div>
+                           
+    
+                        </div>
+                        </div>
+                    </div>
+                <div class=" block lg:hidden md:mt-0  ">
+
+                    <div class="flex  md:py-0   cursor-pointer items-center w-full"
+                        onclick="dropdownfun(this)">
+                        <img class="h-auto ms-2 rounded-full w-10 object-contain relative"
+                            src="../images/profile.png" />
+
+
+                    </div>
+                    <div class="absolute w-screen z-100  shadow-xl start-0  top-20 p-5 md:w-auto select1 bg-white end-0 overflow-hidden rounded-2xl">         
+                        <p class=" text-black34  cursor-pointer      font-bold text-sm ">
+                            Ahmed moussa</p>
+                            <p class=" text-gray  font-medium text-xs fontp">Email@gmail.com</p>
+
+                       
+
+                        <div class=" flex items-center px-2 hover:bg-orange/20 mt-2 rounded-2xl group">
+                            <svg class="w-6 h-6 ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:fill-orange "
+                                    d="M15.24 22.27H15.11C10.67 22.27 8.53002 20.52 8.16002 16.6C8.12002 16.19 8.42002 15.82 8.84002 15.78C9.24002 15.74 9.62002 16.05 9.66002 16.46C9.95002 19.6 11.43 20.77 15.12 20.77H15.25C19.32 20.77 20.76 19.33 20.76 15.26V8.74C20.76 4.67 19.32 3.23 15.25 3.23H15.12C11.41 3.23 9.93002 4.42 9.66002 7.62C9.61002 8.03 9.26002 8.34 8.84002 8.3C8.42002 8.27 8.12001 7.9 8.15001 7.49C8.49001 3.51 10.64 1.73 15.11 1.73H15.24C20.15 1.73 22.25 3.83 22.25 8.74V15.26C22.25 20.17 20.15 22.27 15.24 22.27Z"
+                                    fill="#292D32" />
+                                <path class="group-hover:fill-orange "
+                                    d="M15.0001 12.75H3.62012C3.21012 12.75 2.87012 12.41 2.87012 12C2.87012 11.59 3.21012 11.25 3.62012 11.25H15.0001C15.4101 11.25 15.7501 11.59 15.7501 12C15.7501 12.41 15.4101 12.75 15.0001 12.75Z"
+                                    fill="#292D32" />
+                                <path class="group-hover:fill-orange "
+                                    d="M5.84994 16.1C5.65994 16.1 5.46994 16.03 5.31994 15.88L1.96994 12.53C1.67994 12.24 1.67994 11.76 1.96994 11.47L5.31994 8.12C5.60994 7.83 6.08994 7.83 6.37994 8.12C6.66994 8.41 6.66994 8.89 6.37994 9.18L3.55994 12L6.37994 14.82C6.66994 15.11 6.66994 15.59 6.37994 15.88C6.23994 16.03 6.03994 16.1 5.84994 16.1Z"
+                                    fill="#292D32" />
+                            </svg>
+                            <p class=" text-black34 py-4 px-4 cursor-pointer      font-bold text-xs ">
+                                Logout</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="main ms-2 relative z-[10] md:hidden" onclick="openNav()">
+                    <svg class=" fill-orange w-5 h-5 " xmlns="http://www.w3.org/2000/svg" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512"
+                        height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                        xml:space="preserve" class="">
+                        <g>
+                            <path
+                                d="M29 8H3a2 2 0 0 1 0-4h26a2 2 0 0 1 0 4zM29 28H3a2 2 0 0 1 0-4h26a2 2 0 0 1 0 4zM29 18H3a2 2 0 0 1 0-4h26a2 2 0 0 1 0 4z"
+                                fill="#FF820F" data-original="#5865f2" class=""></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+         
+                
+                
+                <div
+                class="p-5 pt-4 w-full md:w-[100%] h-screen md:h-auto overflow-y-scroll md:overflow-y-visible lg:p-0 flexsss hidden md:block bg-white md:bg-transparent top-0 right-0 left-0 bottom-0 z-[100]  lg:flex items-center">
+                <div class=" md:items-center w-full items-center flex flex-col md:flex-row md:flex">
+                    <a href="#" class=" md:hidden">
+                        <img class=" h-[60px] md:h-[85px] object-contain" src="../images/logo.png" />
+                    </a>
+               
+              
+                <div class="order-1 w-full md:w-auto md:flex flex  ms-auto flex-col-reverse md:flex-row ">
+                    <p class="fontp text-black34 font-medium text-base my-2">Home</p>
+                    <div class="relative   md:ms-auto">
+                        <a href="#" onclick="dropdownfun(this)"
+                            class=" flex my-4 px-4 md:my-2 ms-auto justify-center items-center me-2 text-base text-black34 font-semibold"><span
+                                class="me-2">En</span> <span> <img src="../images/downn.svg"
+                                    class="w-2 h-2 object-contain" /></span>
+                        </a>
+                        <div id="select4"
+                            class=" md:absolute select1 w-full  md:w-48 top-12 md:bg-white md:shadow rounded-2xl py-4 md:p-3">
+                            <a> <p
+                                class=" text-orange py-4 px-4 cursor-pointer hover:bg-orange/20 bg-orange/20 rounded-2xl border-b border-orange/10   font-bold text-xs ">
+                                En</p>
+                           </a>
+                           <a>    <p
+                                class=" text-black py-4 px-4 mt-1 cursor-pointer hover:bg-orange/20 border-b rounded-2xl border-orange/10  font-bold text-xs ">
+                                Ar</p></a>
+                                <a> <p
+                                class=" text-black py-4 px-4 mt-1 cursor-pointer  hover:bg-orange/20  rounded-2xl font-bold text-xs ">
+                                Fr</p></a>
+
+                        </div>
+
+                    </div>
+                  
+                    <!--  after login add flex and remove hidden  -->
+                    <div class="relative hidden md:block my-4 md:my-0 ">
+                        <div class=" relative top-auto  md:end-auto cursor-pointer"
+                            onclick="dropdownfun(this)">
+                            <div
+                                class=" w-5 h-5 bg-orange rounded-full flex items-center justify-center absolute -top-1 md:start-auto start-10 md:-end-1 z-10">
+                                <p class=" text-white text-center   font-bold text-[11px] ">
+                                    1</p>
+                            </div>
+                            <img class="h-auto ms-4 rounded-full w-10 object-contain relative"
+                                src="../images/notification.png" />
+                        </div>
+                        <div class="md:absolute select1  end-0 overflow-hidden rounded-2xl">
+                        <div
+                            class=" w-full max-h-96 min-h-96 overflow-y-auto  md:pe-5 overflow-x-hidden md:w-72 top-12 md:bg-white md:shadow rounded-2xl py-4 md:p-3">
+
+                            <div
+                                class=" flex mb-2 items-start group px-2 hover:bg-orange/20 border-b border-orange/10 rounded-2xl group">
+                                <img data-aos="fade-left" class="h-auto mt-4 rounded-full w-10 object-contain relative"
+                                    src="../images/notifcations/new_article.png" />
+                                <div class="py-4 px-4">
+                                    <p class=" text-black34  cursor-pointer      font-bold text-sm ">
+                                        Ahmed moussa</p>
+                                    <span class=" text-gray  font-medium text-xs fontp">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</span>
+
+                                    <p class=" text-gray  font-medium text-xs fontp">06-07-2023</p>
+                                </div>
+
+                            </div>
+                            <div
+                                class=" flex mb-2 relative items-start group px-2 bg-orange/10 hover:bg-orange/20 border-b border-orange/10 rounded-2xl group">
+                                <img data-aos="fade-left" class="h-auto mt-4 rounded-full w-10 object-contain relative"
+                                    src="../images/notifcations/complete.png" />
+                                <div class="py-4 px-4">
+                                    <p class=" text-black34  cursor-pointer      font-bold text-sm ">
+                                        Ahmed moussa</p>
+                                    <span class=" text-gray  font-medium text-xs fontp">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.</span>
+
+                                    <p class=" text-gray  font-medium text-xs fontp">06-07-2023</p>
+                                </div>
+
+
+                            </div>
+                           
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="relative hidden md:block mt-5 md:mt-0  ">
+
+                        <div class="flex  md:py-0   cursor-pointer items-center w-full"
+                            onclick="dropdownfun(this)">
+                            <img class="h-auto ms-4 rounded-full w-10 object-contain relative"
+                                src="../images/profile.png" />
+
+
+                        </div>
+                        <div
+                            class=" md:absolute select1 end-0 md:w-48 top-12 md:bg-white md:shadow rounded-2xl py-4 md:p-3">
+                            
+                            <p class=" text-black34  cursor-pointer      font-bold text-sm ">
+                                Ahmed moussa</p>
+                                <p class=" text-gray  font-medium text-xs fontp">Email@gmail.com</p>
+ 
+                            <div
+                                class=" flex items-center group mt-3 px-2 hover:bg-orange/20 border-b border-orange/10 rounded-2xl group">
+                                
+                                <svg class="w-6 h-6 ms-1" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="group-hover:stroke-orange " d="M8.10671 7.24805C8.04004 7.24138 7.96004 7.24138 7.88671 7.24805C6.30004 7.19472 5.04004 5.89472 5.04004 4.29472C5.04004 2.66138 6.36004 1.33472 8.00004 1.33472C9.63337 1.33472 10.96 2.66138 10.96 4.29472C10.9534 5.89472 9.69337 7.19472 8.10671 7.24805Z" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="group-hover:stroke-orange " d="M4.77323 9.70821C3.1599 10.7882 3.1599 12.5482 4.77323 13.6215C6.60657 14.8482 9.61323 14.8482 11.4466 13.6215C13.0599 12.5415 13.0599 10.7815 11.4466 9.70821C9.6199 8.48821 6.61323 8.48821 4.77323 9.70821Z" stroke="#292D32" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                <p class=" text-black34 py-4 px-4 cursor-pointer      font-bold text-xs ">
+                                    My Profile</p>
+
+                            </div>
+                            <div
+                                class=" flex items-center group px-2 hover:bg-orange/20 border-b border-orange/10 rounded-2xl group">
+                                <svg class="w-6 h-6 ms-1 " width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="group-hover:stroke-orange " d="M14.6666 12.157V4.11037C14.6666 3.31037 14.0133 2.71703 13.2199 2.7837H13.1799C11.7799 2.9037 9.65325 3.61703 8.46658 4.3637L8.35325 4.43703C8.15992 4.55703 7.83992 4.55703 7.64659 4.43703L7.47992 4.33703C6.29325 3.59703 4.17325 2.89037 2.77325 2.77703C1.97992 2.71037 1.33325 3.31037 1.33325 4.1037V12.157C1.33325 12.797 1.85325 13.397 2.49325 13.477L2.68659 13.5037C4.13325 13.697 6.36659 14.4304 7.64659 15.1304L7.67325 15.1437C7.85325 15.2437 8.13992 15.2437 8.31325 15.1437C9.59325 14.437 11.8333 13.697 13.2866 13.5037L13.5066 13.477C14.1466 13.397 14.6666 12.797 14.6666 12.157Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="group-hover:stroke-orange " d="M8 4.65698V14.657" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="group-hover:stroke-orange "  d="M5.16675 6.65698H3.66675" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="group-hover:stroke-orange " d="M5.66675 8.65698H3.66675" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                <p class=" text-black34 py-4 px-4 cursor-pointer      font-bold text-xs ">
+                                    Settings</p>
+
+                            </div>
+
+                            <div class=" flex items-center px-2 hover:bg-orange/20  rounded-2xl group">
+                                <svg class="w-6 h-6 ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="group-hover:fill-orange "
+                                        d="M15.24 22.27H15.11C10.67 22.27 8.53002 20.52 8.16002 16.6C8.12002 16.19 8.42002 15.82 8.84002 15.78C9.24002 15.74 9.62002 16.05 9.66002 16.46C9.95002 19.6 11.43 20.77 15.12 20.77H15.25C19.32 20.77 20.76 19.33 20.76 15.26V8.74C20.76 4.67 19.32 3.23 15.25 3.23H15.12C11.41 3.23 9.93002 4.42 9.66002 7.62C9.61002 8.03 9.26002 8.34 8.84002 8.3C8.42002 8.27 8.12001 7.9 8.15001 7.49C8.49001 3.51 10.64 1.73 15.11 1.73H15.24C20.15 1.73 22.25 3.83 22.25 8.74V15.26C22.25 20.17 20.15 22.27 15.24 22.27Z"
+                                        fill="#292D32" />
+                                    <path class="group-hover:fill-orange "
+                                        d="M15.0001 12.75H3.62012C3.21012 12.75 2.87012 12.41 2.87012 12C2.87012 11.59 3.21012 11.25 3.62012 11.25H15.0001C15.4101 11.25 15.7501 11.59 15.7501 12C15.7501 12.41 15.4101 12.75 15.0001 12.75Z"
+                                        fill="#292D32" />
+                                    <path class="group-hover:fill-orange "
+                                        d="M5.84994 16.1C5.65994 16.1 5.46994 16.03 5.31994 15.88L1.96994 12.53C1.67994 12.24 1.67994 11.76 1.96994 11.47L5.31994 8.12C5.60994 7.83 6.08994 7.83 6.37994 8.12C6.66994 8.41 6.66994 8.89 6.37994 9.18L3.55994 12L6.37994 14.82C6.66994 15.11 6.66994 15.59 6.37994 15.88C6.23994 16.03 6.03994 16.1 5.84994 16.1Z"
+                                        fill="#292D32" />
+                                </svg>
+                                <p class=" text-black34 py-4 px-4 cursor-pointer      font-bold text-xs ">
+                                    Logout</p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </div>
+                </div>
+                
+            </div>
+        </header>
+        <div id="sidebaradmin" class="hidden md:block absolute md:fixed bg-orange h-screen left-0 top-0 p-3 overflow-hidden botom-0 w-[85vw]  md:w-20 z-50 tran bg-gray-light	 transition-all	duration-700"
+        onmouseenter="setMouse(true,this)"
+                 onmouseleave="setMouse(false,this)">
+                 <div class=" flex items-center">
+
+                    <img class=" h-[60px] md:h-[56px] object-contain" src="../images/logoadmin.png" />
+
+                </div>
+                 <div class="mt-20">
+                 <a href='' class="pt-10" >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/dashboard.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal	duration-700  text-white fontp text-base">Users</h4>
+                   </div>
+                   </a>
+                </div>
+                   <a href='' >
+    
+                    <div class="flex items-center bg-white/40 rounded-2xl py-3.5  mb-6">
+                    <img src="../images/admin/courese.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp  text-base">workers</h4>
+                   </div>
+                   </a>
+                   <a href='' class="" >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/student.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp text-base">Articles</h4>
+                   </div>
+                   </a> 
+                   <a href='' >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/instractor.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp  text-base">Serviers</h4>
+                   </div>
+                   </a>
+    
+                    <a href='' >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/notifications.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp text-base">List orders</h4>
+                   </div>
+                   </a>
+                   <a href='' >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/subs.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap		font-normal duration-700  text-white fontp  text-base">Feedback</h4>
+                   </div>
+                   </a>
+                   <a href='' >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/finaces.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp text-base">FAQs</h4>
+                   </div>
+                   </a>
+                   <a href='' >
+    
+                    <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/email.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp f text-base">Tikets</h4>
+                   </div>
+                   <div class="flex items-center bg-blue-light rounded py-2 mb-6">
+                    <img src="../images/admin/admins.svg" alt="Logo" class="w-6 h-6 mx-3"/>
+                   
+                   <h4 class="w-36 md:w-0 qqq overflow-hidden	transition-all whitespace-nowrap	font-normal duration-700  text-white fontp f text-base">Tikets</h4>
+                   </div>
+                   </a>
+                   
+        </div>
+        <div>
+      
+            <div class="w-full md:ps-24 md:px-10">
+                <h4  data-aos="fade-up" class="font-bold text-black34 mx-auto my-5 text-2xl px-4 lg:leading-[120%] ">
+                    <span>Languages Financial Report</span>
+                </h4>
+             <div class="w-full px-2 pt-5 mb-5 flex flex-wrap ">
+                <div class="w-full md:pe-3 md:w-4/12">
+                    <div class=" flex items-center flex-col w-full bg-white rounded-2xl py-10 p-4">
+                        <p class="text-3xl font-semibold text-orange fontp">15</p>
+                        <p class="text-lg font-semibold text-black34 fontp">Total Courses</p>
+                    </div>
+                </div>
+                <div class="w-full md:px-3 md:w-4/12">
+                    <div class=" flex items-center flex-col w-full bg-white rounded-2xl py-10 p-4">
+                        <p class="text-3xl font-semibold text-orange fontp">15</p>
+                        <p class="text-lg font-semibold text-black34 fontp">Total Enrolled</p>
+                    </div>
+                </div>
+                <div class="w-full md:ps-3 md:w-4/12">
+                    <div class=" flex items-center flex-col w-full bg-white rounded-2xl py-10 p-4">
+                        <p class="text-3xl font-semibold text-orange fontp">1500000 da</p>
+                        <p class="text-lg font-semibold text-black34 fontp">Total Earnings</p>
+                    </div>
+                </div>
+
+             </div>
+                    <div class="w-full  mb-4 max-w-full px-3 flex-0">
+                <div class="relative flex flex-col min-w-0 break-words bg-white border-0 d  rounded-2xl bg-clip-border">
+                 
+                  <div>
+                    <table class="table admin" datatable id="datatable-search-list">
+                      <thead>
+                        <tr class="bg-orange/30">
+                          <th class="font-bold uppercase text-orange text-xxs opacity-70">Course</th>
+                          <th class="font-bold uppercase text-orange text-xxs opacity-70">Instructor</th>
+                          <th class="font-bold uppercase text-orange text-xxs opacity-70">Students</th>
+                          <th class="font-bold uppercase text-orange text-xxs opacity-70">Earnings</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                        <tr>
+                            <td>
+                                <div class="text-white text-sm flex gap-2 items-center font-semibold w-[100px] ">
+                                    <img  class="h-auto  w-12 object-contain relative"
+                                        src="../images/date.svg" />
+                            <p class="text-black34 font-semibold text-base">Course Title here</p>
+            
+                                </div>
+                              </td>
+                          <td class="text-sm font-medium text-black34 fontp leading-normal">Bachir Tahraoui</td>
+                          <td class="text-sm font-medium text-black34 fontp leading-normal">8</td>
+                          <td class="text-sm font-medium text-black34 fontp leading-normal">1340000 da</td>
+                         
+                         
+                        </tr>
+                  
+                          
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                </div>
+              </div>
+        </div>
+
+    
+    </div>
+  
+    <div  class="fixed flexsss22 top-0 left-0 right-0 z-50  hidden flex-col  p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md mx-auto my-auto  max-h-full">
+            <div class="relative bg-white rounded-lg  shadow">
+                <button type="button" onclick="closePop('.flexsss22')" class="absolute top-3 right-2.5 group text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-2xl text-sm p-1.5 ml-auto inline-flex items-center " data-modal-hide="popup-modal">
+                    <svg aria-hidden="true" class="w-5 h-5 fill-gray2 group-hover:fill-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center">
+                    <svg class="mx-auto mb-4 text-gray-400 w-14 h-14  my-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#f44336"/>
+                        <path d="M3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85018 14.25 12.0002 14.25C13.0102 14.25 14.0002 14.38 14.9602 14.65C15.3602 14.76 15.5902 15.17 15.4802 15.57C15.3702 15.97 14.9602 16.2 14.5602 16.09C13.7402 15.86 12.8802 15.75 12.0002 15.75C7.68018 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75Z" fill="#f44336"/>
+                        <path d="M18 22.75C16.82 22.75 15.7 22.31 14.83 21.52C14.48 21.22 14.17 20.85 13.93 20.44C13.49 19.72 13.25 18.87 13.25 18C13.25 16.75 13.73 15.58 14.59 14.69C15.49 13.76 16.7 13.25 18 13.25C19.36 13.25 20.65 13.83 21.53 14.83C22.31 15.7 22.75 16.82 22.75 18C22.75 18.38 22.7 18.76 22.6 19.12C22.5 19.57 22.31 20.04 22.05 20.45C21.22 21.87 19.66 22.75 18 22.75ZM18 14.75C17.11 14.75 16.29 15.1 15.67 15.73C15.08 16.34 14.75 17.14 14.75 18C14.75 18.59 14.91 19.17 15.22 19.67C15.38 19.95 15.59 20.2 15.83 20.41C16.43 20.96 17.2 21.26 18 21.26C19.13 21.26 20.2 20.66 20.78 19.69C20.95 19.41 21.08 19.09 21.15 18.78C21.22 18.52 21.25 18.27 21.25 18.01C21.25 17.21 20.95 16.44 20.41 15.84C19.81 15.14 18.93 14.75 18 14.75Z" fill="#f44336"/>
+                        <path d="M19.4998 18.73H16.5098C16.0998 18.73 15.7598 18.39 15.7598 17.98C15.7598 17.57 16.0998 17.23 16.5098 17.23H19.4998C19.9098 17.23 20.2498 17.57 20.2498 17.98C20.2498 18.39 19.9098 18.73 19.4998 18.73Z" fill="#f44336"/>
+                        </svg>
+                        
+                    <h3 class="mb-5 text-md font-medium text-black34">Are you sure you want to Block  ?</h3>
+                    <button  onclick="closePop('.flexsss22')"  type="button"  class="text-white bg-red2 hover:bg-red-600 mt-3  h-14  font-medium rounded-lg text-sm inline-flex items-center px-8 py-2.5 text-center me-2">
+                        Yes, I'm sure
+                    </button>
+                    <button  onclick="closePop('.flexsss22')"  type="button" class="text-green bg-green/20 hover:bg-green mt-3  rounded-lg h-14 text-sm font-medium px-8 py-2.5 hover:text-white focus:z-10 ">No, cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="fixed flexsss23 top-0 left-0 right-0 z-50  hidden flex-col  p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md mx-auto my-auto  max-h-full">
+            <div class="relative bg-white rounded-lg  shadow">
+                <button type="button" onclick="closePop('.flexsss23')" class="absolute top-3 right-2.5 group text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-2xl text-sm p-1.5 ml-auto inline-flex items-center " data-modal-hide="popup-modal">
+                    <svg aria-hidden="true" class="w-5 h-5 fill-gray2 group-hover:fill-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center">
+                    <h3 class="mb-5 text-md text-start font-semibold text-black34">Edit informations  ?</h3>
+
+                    <input
+                    class="bg-[#f5f5f5] rounded-[15px] h-14 px-4 fontp w-full mt-4 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                    placeholder="First name  *" />
+                    <input
+                    class="bg-[#f5f5f5] rounded-[15px] h-14 px-4 fontp w-full mt-4 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                    placeholder="Last name  *" />
+                    <input
+                        class="bg-[#f5f5f5] rounded-[15px] h-14 px-4 fontp w-full mt-4 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                        placeholder="Email *" />
+                     
+                    <div class=" w-full flex items-center gap-2">
+                        <div class="h-14 bg-[#f5f5f5] flex justify-center items-center mt-3 text-black34 font-semibold rounded-[15px] w-20  sm:text-sm">
+                            <span>+213</span>
+                        </div> 
+                           <input
+                        class="bg-[#f5f5f5] rounded-[15px]  h-14 px-4 fontp w-11/12 mt-3 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                        placeholder="Phone number *" type="tel" />
+                    </div>
+                  
+                    <button  onclick="closePop('.flexsss23')"  type="button"  class="text-white bg-green hover:bg-green2 mt-3  h-14 w-full justify-center md:w-64 font-medium rounded-lg text-sm inline-flex items-center px-8 py-2.5 text-center me-2">
+                        save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="fixed flexsss25 top-0 left-0 right-0 z-50  hidden flex-col  p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md mx-auto my-auto  max-h-full">
+            <div class="relative bg-white rounded-lg  shadow">
+                <button type="button" onclick="closePop('.flexsss25')" class="absolute top-3 right-2.5 group text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-2xl text-sm p-1.5 ml-auto inline-flex items-center " data-modal-hide="popup-modal">
+                    <svg aria-hidden="true" class="w-5 h-5 fill-gray2 group-hover:fill-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center">
+                    <h3 class="mb-5 text-md text-start font-semibold text-black34">Add user  ?</h3>
+
+                    <input
+                    class="bg-[#f5f5f5] rounded-[15px] h-14 px-4 fontp w-full mt-4 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                    placeholder="First name  *" />
+                    <input
+                    class="bg-[#f5f5f5] rounded-[15px] h-14 px-4 fontp w-full mt-4 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                    placeholder="Last name  *" />
+                    <input
+                        class="bg-[#f5f5f5] rounded-[15px] h-14 px-4 fontp w-full mt-4 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                        placeholder="Email *" />
+                     
+                    <div class=" w-full flex items-center gap-2">
+                        <div class="h-14 bg-[#f5f5f5] flex justify-center items-center mt-3 text-black34 font-semibold rounded-[15px] w-20  sm:text-sm">
+                            <span>+213</span>
+                        </div> 
+                           <input
+                        class="bg-[#f5f5f5] rounded-[15px]  h-14 px-4 fontp w-11/12 mt-3 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                        placeholder="Phone number *" type="tel" />
+                    </div>
+                    <input
+            class="bg-[#f5f5f5] rounded-[15px]  h-14 px-4 fontp w-full mt-3 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+            placeholder="Password *" type="password"  />
+            <input
+                class="bg-[#f5f5f5] rounded-[15px]  h-14 px-4 fontp w-full mt-3 font-medium  placeholder-slate-400 focus:outline-none focus:border-green focus:ring-green/50 block sm:text-sm focus:ring-1 "
+                placeholder="Password confirmation *" type="password" />
+                    <button  onclick="closePop('.flexsss25')"  type="button"  class="text-white bg-green hover:bg-green2 mt-3  h-14 w-full justify-center md:w-64 font-medium rounded-lg text-sm inline-flex items-center px-8 py-2.5 text-center me-2">
+                        save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="fixed flexsss24 top-0 left-0 right-0 z-50  hidden flex-col  p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md mx-auto my-auto  max-h-full">
+            <div class="relative bg-white rounded-lg  shadow">
+                <button type="button" onclick="closePop('.flexsss24')" class="absolute top-3 right-2.5 group text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-2xl text-sm p-1.5 ml-auto inline-flex items-center " data-modal-hide="popup-modal">
+                    <svg aria-hidden="true" class="w-5 h-5 fill-gray2 group-hover:fill-green" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center">
+                    <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 stroke-red2 my-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="mb-5 text-md font-medium text-black34">Are you sure you want to delete this order <span class="font-bold">#12313231</span> ?</h3>
+                    <button  onclick="closePop('.flexsss24')"  type="button"  class="text-white bg-red2 hover:bg-red-600 mt-3  h-14  font-medium rounded-lg text-sm inline-flex items-center px-8 py-2.5 text-center me-2">
+                        Yes, I'm sure
+                    </button>
+                    <button  onclick="closePop('.flexsss24')"  type="button" class="text-green bg-green/20 hover:bg-green mt-3  rounded-lg h-14 text-sm font-medium px-8 py-2.5 hover:text-white focus:z-10 ">No, cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div onclick="openNav()" class="  gg4255 items-center bg-black/30  justify-center hidden top-0 right-0 left-0 bottom-0 z-[10] fixed"></div>
+    <div  class="  gg422 items-center bg-black/30  justify-center hidden top-0 right-0 left-0 bottom-0 z-[1000] fixed">
+        <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="72.5" cy="72.5" r="69.5" stroke="#37F807" stroke-width="6"/>
+            <path d="M44 74.7767L61.4349 92L108 46" stroke="#37F807" stroke-width="10.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+    </div>
+  
+    <script>
+       addEventListener("DOMContentLoaded", (event) => {
+       
+    
+      
+      
+        function openPop(gg42) {
+            document.querySelector(gg42).classList.add('flex');
+            document.querySelector(gg42).classList.remove('hidden');
+            document.body.classList.add("overflow-hidden");
+            document.body.style.height = "100vh";
+            document.body.style.position = "fixed";
+            document.body.style.width = "100%";
+            gg22.classList.add("block");
+            gg22.classList.remove("hidden");
+        }
+        function closePop(gg42) {
+            document.querySelector(gg42).classList.remove('flex');
+            document.querySelector(gg42).classList.add('hidden');
+            document.body.classList.remove("overflow-hidden");
+            document.body.style.height = "100%";
+            document.body.style.position = "relative";
+            document.body.style.width = "100%";
+           
+            gg22.classList.remove("block");
+            gg22.classList.add("hidden");
+
+
+        }
+    });
+    let gg22 =document.querySelector(".gg422");
+    function openNav() {
+            document.querySelector("#sidebaradmin").classList.toggle('hidden');    
+            document.querySelector(".gg4255").classList.toggle('hidden');    
+        }
+    function removedone() {
+        gg22.classList.remove('flex');
+        gg22.classList.add('hidden');
+   
+    }
+    function Done(){
+        gg22.classList.add('flex');
+        gg22.classList.remove('hidden');
+        setTimeout(removedone, 2000);
+    }
+    let qqqs=document.querySelectorAll(".qqq");
+    function setMouse(e,d){
+            if(e){
+                d.classList.remove("md:w-20");
+                d.classList.add("w-56");
+                d.style.width="14rem"
+                for(let i=0;i<qqqs.length ; i++){
+                    qqqs[i].classList.remove("md:w-0");
+                    qqqs[i].classList.add("w-36");
+                }
+                
+            }
+            else{
+                d.classList.remove("w-56")
+                d.classList.add("md:w-20")
+                d.style.width="5rem"
+                for(let i=0;i<qqqs.length ; i++){
+                    qqqs[i].classList.add("md:w-0");
+                    qqqs[i].classList.remove("w-36");
+                }
+            }
+        }
+        function dropdown(name) {
+  document.getElementById(name).classList.toggle("show");
+} 
+let arr = document.querySelectorAll(".select1");
+
+window.addEventListener('click', function (e) {
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].parentElement.children[0].contains(e.target)) {
+        } else {
+            arr[i].classList.remove('show')
+
+        }
+    }
+
+
+
+
+
+});
+function dropdownfun(name) {
+    name.nextElementSibling.classList.toggle("show");
+
+}
+function dropdownfun2(name) {
+    document.getElementById(name).classList.toggle("show");
+
+}
+
+    </script>
+    <script src="../js/datatable.js" type="text/javascript" async="true"></script>
+    <script src="../js/datatables.min.js"></script>
+</body>
+
+
+</html>
