@@ -7,7 +7,7 @@
 
 ## Installation
 ```sh
-git clone https://github.com/ziyad-99/HospitalManagmentSystemToAnourClinic.git
+git clone https://github.com/ziyad-99/3ilm-E-Learning-Platform.git
 cd hospital-management-system
 cp .env.example .env
 composer install
